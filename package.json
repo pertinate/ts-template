@@ -8,7 +8,7 @@
     "start": "node dist/index.js",
     "build": "tsc",
     "dev": "ts-node-dev --respawn src/index.ts",
-    "dev:container": "docker run --rm -it --name node-docker -v $PWD:/home/node/app -w /home/node/app -e \"PORT=8080\" -p 8080:8080 -u node node:latest /bin/bash"
+    "dev:container": "docker run --rm -it --name node-docker -v $PWD:/home/node/app -w /home/node/app -e \"PORT=8080\" -p 8080:8080 -u node node:14.13.1-alpine3.12 /bin/ash"
   },
   "keywords": [],
   "author": "",
